@@ -1,0 +1,41 @@
+@use "@scss/variables" as *;
+@use "sass:color";
+
+.progress-bar {
+  display: block;
+
+  &__label {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 2px;
+    color: var(--main-text-primary);
+  }
+
+  &__wrapper {
+    background-color: color.adjust($main-text-primary, $alpha: -0.3);
+    height: 1rem !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $main-border-blue;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  &__bar {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  &__value {
+    color: $main-text-white;
+    font-size: 12px;
+    line-height: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

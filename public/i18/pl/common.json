@@ -1,0 +1,48 @@
+{
+  "common": {
+    "glob3d": {
+      "zoomIn": "Powiększ",
+      "zoomOut": "Pomniejsz",
+      "resetView": "Zresetuj widok",
+      "tiltUp": "Pochyl w górę",
+      "tiltDown": "Pochyl w dół",
+      "toggleView": "Przełącz widok",
+      "speedUp": "Przyspiesz",
+      "speedDown": "Zwolnij",
+      "pause": "Pauza",
+      "rotate": "Obróć"
+    },
+    "table": {
+      "emptyMessage": "Nie znaleziono danych.",
+      "currentPageReport": "{{first}} do {{last}} z {{totalRecords}}",
+      "filterInputPlaceholder": "Wyszukaj"
+    }
+  },
+  "header": "Dashboard Finansowy",
+  "exchangeSummaryCard": {
+    "table": {
+      "date": "Data"
+    }
+  },
+  "exchangeRatesCard": {
+    "currencyPanel": {
+      "currencyFromId": "Waluta bazowa",
+      "baseValue": "Wartość bazowa",
+      "currencyToId1": "Waluta 1",
+      "currencyToId2": "Waluta 2",
+      "currencyToId3": "Waluta 3",
+      "dateRangeChangeHeader": "Zakres dat"
+    },
+    "table": {
+      "date": "Data"
+    },
+    "panelIndicators": {
+      "title": "Panel Wskaźników",
+      "min": "Najniższy kurs",
+      "max": "Najwyższy kurs",
+      "avg": "Średni kurs",
+      "lastChange": "Ostatnia zmiana %",
+      "avgDailyChange": "Średnia dzienna zmiana %"
+    }
+  }
+}

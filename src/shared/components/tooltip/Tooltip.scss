@@ -1,0 +1,62 @@
+.tooltip {
+  &-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &-content {
+    position: absolute;
+    background-color: var(--main-bg-page);
+    color: var(--main-text-blue);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+
+    &.tooltip-visible {
+      display: block;
+      visibility: visible;
+    }
+  }
+
+  &-size {
+    &-marker {
+      font-size: 0.2rem;
+      padding: 1px;
+      border-radius: 1px;
+      line-height: 1;
+    }
+
+    &-normal {
+      font-size: 0.75rem;
+      padding: 8px;
+    }
+  }
+
+  &-top {
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-bottom {
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-left {
+    right: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &-right {
+    left: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

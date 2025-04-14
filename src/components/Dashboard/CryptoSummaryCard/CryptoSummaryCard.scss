@@ -1,0 +1,88 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.crypto-summary-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  & h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--main-text-blue);
+  }
+
+  & .crypto-summary-select {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  & .crypto-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    & .crypto-icon {
+      max-height: 130px;
+      max-width: 130px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+    }
+  }
+
+  & .crypto-info-container {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+  }
+
+  & .crypto-data {
+    width: 100%;
+    text-align: left;
+  }
+
+  & .crypto-sentiment {
+    margin-top: 8px;
+
+    & p {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--main-text-primary);
+      text-align: center;
+    }
+  }
+
+  & p {
+    font-size: 13px;
+    color: var(--main-text-secondary);
+    transition: color 0.3s ease-in-out;
+
+    &.crypto-price {
+      color: var(--main-text-blue);
+      font-size: 1.4rem;
+      font-weight: bold;
+      display: inline-block; /* WAŻNE: Pozwala na transformację */
+      animation: pulse 1.5s infinite alternate ease-in-out;
+    }
+  }
+
+  .bar-chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  }
+}

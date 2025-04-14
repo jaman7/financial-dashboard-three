@@ -1,0 +1,28 @@
+.collapse-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+  .collapse-header {
+    width: 100%;
+    padding: 1rem;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+
+    .arrow {
+      font-size: 1rem;
+      transition: transform 0.2s ease;
+    }
+  }
+
+  .collapse-content {
+    padding: 1rem;
+    background-color: #fff;
+    font-size: 0.95rem;
+  }
+}

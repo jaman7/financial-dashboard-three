@@ -1,0 +1,19 @@
+.divider {
+  background-color: var(--main-bg-blue-light);
+  transition: background-color 0.3s ease;
+
+  &.horizontal {
+    height: 1px;
+    width: 100%;
+  }
+
+  &.vertical {
+    width: 1px;
+    height: 100%;
+  }
+
+  &.dashed {
+    background: none;
+    border-top: 1px dashed #c0c0c0;
+  }
+}

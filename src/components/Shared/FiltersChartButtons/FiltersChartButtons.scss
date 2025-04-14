@@ -1,0 +1,9 @@
+.filters-charts-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  & .buttons-container {
+    display: flex;
+    gap: 2px;
+  }
+}

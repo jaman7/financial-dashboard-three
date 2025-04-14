@@ -1,0 +1,55 @@
+.exchange-summary-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  & .exchange-select-container {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  & .exchange-summary-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+
+    & .left {
+      text-align: left;
+    }
+
+    & .right {
+      text-align: right;
+    }
+
+    & .value {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--main-text-primary);
+
+      &.big {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--main-text-blue);
+      }
+    }
+
+    & .small {
+      font-size: 13px;
+      color: var(--main-text-primary);
+    }
+  }
+
+  .bar-chart-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,107 @@
+@use "@scss/extend" as *;
+@use "@scss/variables" as *;
+
+.panel-controls,
+.panel-controls-min {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+
+    &--value,
+    &--symbol {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--main-text-blue);
+      line-height: 1;
+    }
+
+    &--symbol {
+      font-size: 14px;
+    }
+
+    & .flag {
+      max-height: 16px;
+
+      @extend %shared-box-shadow;
+    }
+
+    .panel-controls & .flag {
+      max-height: 20px;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    align-items: center;
+    width: 100%;
+    gap: 4px 8px;
+
+    &--item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      &.light {
+        justify-content: space-between;
+        background-color: var(--main-bg-page);
+      }
+    }
+
+    & .form-value {
+      font-size: 14px;
+      color: var(--main-text-blue);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__symbols {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &--symbol {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--main-text-blue);
+      line-height: 1;
+    }
+
+    & .flag {
+      max-height: 16px;
+
+      @extend %shared-box-shadow;
+    }
+
+    .panel-controls & .flag {
+      max-height: 20px;
+    }
+  }
+}
+
+.panel-controls {
+  height: 100%;
+  justify-content: space-around;
+
+  &__header {
+    gap: 8px;
+
+    & .flag {
+      max-height: 20px;
+    }
+  }
+}

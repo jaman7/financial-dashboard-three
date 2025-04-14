@@ -1,0 +1,86 @@
+@use "@scss/variables" as *;
+@use "@scss/mixins" as *;
+
+.exchange-rates-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  grid-auto-flow: dense;
+  gap: 8px;
+
+  @include mq(maxlg) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 0.35rem;
+  }
+
+  &__item {
+    display: flex;
+    flex: 1 1 100%;
+
+    // width: 100%;
+    overflow: hidden;
+  }
+
+  .chart1 {
+    order: 1;
+
+    @include mq(maxlg) {
+      order: 3;
+    }
+  }
+
+  .chart2 {
+    order: 3;
+
+    @include mq(maxlg) {
+      order: 4;
+    }
+  }
+
+  .panel1 {
+    order: 2;
+
+    @include mq(maxlg) {
+      order: 1;
+    }
+  }
+
+  .panel2 {
+    order: 4;
+
+    @include mq(maxlg) {
+      order: 2;
+    }
+  }
+
+  .map {
+    order: 5;
+
+    @include mq(maxlg) {
+      order: 5;
+    }
+  }
+
+  .pie {
+    order: 6;
+
+    @include mq(maxlg) {
+      order: 6;
+    }
+  }
+
+  .table {
+    order: 7;
+
+    @include mq(maxlg) {
+      order: 8;
+    }
+  }
+
+  .progress-bar {
+    order: 8;
+
+    @include mq(maxlg) {
+      order: 7;
+    }
+  }
+}

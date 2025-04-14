@@ -1,0 +1,48 @@
+{
+  "common": {
+    "glob3d": {
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "resetView": "Reset view",
+      "tiltUp": "Tilt Up",
+      "tiltDown": "Tilt Down",
+      "toggleView": "Toggle View",
+      "speedUp": "Speed +",
+      "speedDown": "Speed -",
+      "pause": "Pause",
+      "rotate": "Rotate"
+    },
+    "table": {
+      "emptyMessage": "No data found.",
+      "currentPageReport": "{{first}} to {{last}} of {{totalRecords}}",
+      "filterInputPlaceholder": "Search"
+    }
+  },
+  "header": "Financial Dashboard",
+  "exchangeSummaryCard": {
+    "table": {
+      "date": "Date"
+    }
+  },
+  "exchangeRatesCard": {
+    "currencyPanel": {
+      "currencyFromId": "Base currency",
+      "baseValue": "Base value",
+      "currencyToId1": "Currency 1",
+      "currencyToId2": "Currency 2",
+      "currencyToId3": "Currency 3",
+      "dateRangeChangeHeader": "Date Range"
+    },
+    "table": {
+      "date": "Date"
+    },
+    "panelIndicators": {
+      "title": "Indicators Panel",
+      "min": "Lowest Rate",
+      "max": "Highest Rate",
+      "avg": "Average Rate",
+      "lastChange": "Last Change %",
+      "avgDailyChange": "Average Daily Change %"
+    }
+  }
+}
